@@ -1,22 +1,16 @@
-# Raspberry Pi SCADA — Circuit Schematic
+# Raspberry Pi Based Scada System — Circuit Notes
 
-- Course: Raspberry Pi based SCADA System
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/raspberry-pi-scada-system-interface-raspberrypi/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the Raspberry Pi board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- Sensors: `GPIO22`, `GPIO23` (with appropriate pull-ups/downs).
-- Actuator: `GPIO24` driving a relay via transistor driver.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
- GPIO22 <- Sensor1      GPIO24 -> [Driver] -> Relay -> Load
- GPIO23 <- Sensor2      GND   -> Common ground
-```
-
-## Purchase With Discount
-
-Get a discounted price and instrument your SCADA system — use the course link above.
-
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.

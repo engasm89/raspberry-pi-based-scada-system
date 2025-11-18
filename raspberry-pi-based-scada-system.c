@@ -1,3 +1,11 @@
+/*
+ * Course: Raspberry Pi Based Scada System
+ * Platform: Raspberry Pi
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for telemetry printing
 #include <unistd.h> // Include sleep for timing
 
@@ -13,6 +21,7 @@ int gpio_read(int gpio) { return 0; } // Read GPIO
 int gpio_write(int gpio, int value) { return 0; } // Write GPIO
 
 // Program entry point
+// Main routine: orchestrates the raspberry pi based scada system scenario
 int main(void) { // Start of main function
   printf("Raspberry Pi SCADA: telemetry + control\n"); // Startup message
   gpio_export(SENSOR1_GPIO); // Export sensor 1 GPIO
