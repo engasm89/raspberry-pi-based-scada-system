@@ -6,6 +6,14 @@
  * Notes: Auto-generated metadata block (2025-11-18)
  */
 
+/*
+ * Course: Raspberry Pi Based Scada System
+ * Platform: Raspberry Pi
+ * Author: Ashraf S A AlMadhoun
+ * Purpose: Auto-generated metadata block to document the learning goals.
+ * Notes: Auto-generated metadata block (2025-11-18)
+ */
+
 #include <stdio.h> // Include I/O for telemetry printing
 #include <unistd.h> // Include sleep for timing
 
